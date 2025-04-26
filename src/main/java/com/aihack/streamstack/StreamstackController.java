@@ -5,8 +5,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import java.io.IOException;
 import java.util.List;
-import java.util.Scanner;
 
 @Controller
 public class StreamstackController {
@@ -17,7 +17,7 @@ public class StreamstackController {
     }
 
     @GetMapping("/catalogue")
-    public String catalogue(Model model) {
+    public String catalogue(Model model) throws IOException {
         List<Movie> movies = movieService.findAll(); // Assume movieService is a service to fetch movies
         model.addAttribute("movies", movies);
         return "catalogue";
