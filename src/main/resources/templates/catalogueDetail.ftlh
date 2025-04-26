@@ -20,23 +20,10 @@
     <![endif]-->
 </head>
 <body>
-<h1>Welcome to Netflix</h1>
-<table class="table display table-striped" id="netflixTable">
-    <thead>
-    <th>ID</th>
-    <th>Title</th>
-    <th>Description</th>
-    </thead>
-    <tbody>
-    <#list movies as movie>
-        <tr>
-            <td><a href="/catalogue/${movie.id}">${movie.id}</a></td>
-            <td>${movie.title}</td>
-            <td>${movie.description}</td>
-        </tr>
-    </#list>
-    </tbody>
-</table>
+<h1>Catalogue Details</h1>
+<p>ID ${movieDetails.id}</p>
+<p>Title ${movieDetails.title}</p>
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"
         integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
