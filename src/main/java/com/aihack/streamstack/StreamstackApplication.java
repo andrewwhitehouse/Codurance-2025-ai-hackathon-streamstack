@@ -1,4 +1,4 @@
-package com.aihack.streamstack.streamstack;
+package com.aihack.streamstack;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
